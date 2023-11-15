@@ -15,10 +15,10 @@
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.6",
-    "react": "18.0.0-alpha-a0d991fe6-20211031",
-    "react-dom": "18.0.0-alpha-a0d991fe6-20211031",
-    "react-error-boundary": "^3.1.3",
-    "react-redux": "7.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.11",
+    "react-redux": "^8.1.3",
     "redux": "4.1.2",
     "resolve": "1.12.0",
     "rimraf": "^3.0.2",
@@ -50,7 +50,10 @@
   "nodemonConfig": {
     "ignore": [
       "build/*"
-    ]
+    ],
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
   },
   "keywords": [],
   "description": "This demo is a quick and dirty adoptation from https://codesandbox.io/s/kind-sammet-j56ro to try out Redux with React 18 streaming."
